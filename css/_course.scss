@@ -1,0 +1,239 @@
+/* Display flex and different heading tags and buttons */
+
+.course{
+
+    overflow: hidden;
+    display: flex;
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    
+
+    .course_box{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .box_shadow{
+                margin-right: 15px;
+                margin-left: 15px;
+                width: 450px;
+                height:520px;
+                background-image: url(../img/f3.jpg);
+                min-width: 350px;
+                min-height: 1px;
+                flex-shrink: 1;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                box-shadow: 1px 2px lightgrey;
+            .box_img{
+                min-width: 350px;
+                min-height: 1px;
+                flex-shrink: 1;
+                
+                width: 450px;
+                height:520px;
+                
+            }
+            
+        }
+
+        .box_shadow:hover{
+                .box_img{
+                    background: #002147 none repeat scroll 0 0;
+                    opacity: 0.65;
+                }
+            
+        }
+        .box_data{
+            position: relative;
+            width:682px;
+            height:525px;
+            padding-right: 15px;
+            padding-left: 15px;
+            h2{
+                a{
+                    color: #002147;
+                }
+                font-size: 30px;
+               
+                margin-bottom: 15px;
+            }
+            h4{
+                color:#ffb606;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            p{
+                color: #666666;
+                line-height: 26px;
+                margin: 0 0 15px;
+                text-transform: none;
+                font-weight: 400;
+            }
+            h3{
+                font-size: 20px;
+                font-weight: 600;
+                margin-top: 25px;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                color: #002147;
+            }
+            .mdi{
+                margin-right: 8px;
+            }
+            ul{
+                li{
+                    display: block;
+                    margin-bottom: 13px;
+                    text-transform: capitalize;
+                    font-size: 16px;
+                }
+            }
+            button{
+                width:182px;
+                height:50px;
+                background-color: #ffb606;
+                color: #002147 !important;
+                border: 2px solid #ffb606;
+                margin-top: 25px;
+                
+                font-size: 14px;
+                font-weight: 600;
+                
+                letter-spacing: 1px;
+                
+            }
+
+            .box_data1{
+                display: flex;
+                margin-top: 25px;
+                border-top: 1px solid grey;
+                .d1{
+                        margin-right: 30px;
+                        padding-right: 30px;
+                        padding-top: 15px;
+                        border-right: 1px solid grey;
+                        h4{
+                            font-size: 15px;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                            text-transform: uppercase;
+                            color: #002147;
+                        }
+                        font-size:14px;
+                        color: #666666;
+                        .fa{
+                            color:#ffb606;
+                            font-weight: 900;
+                        }
+                    }
+            }
+            
+        }
+    }
+   #B,#C{
+        display: none;
+    } 
+}
+
+/* media query for adjusting flex-wrap  */
+
+@media only screen and (min-width:992px){
+    .course{
+        .course_box{
+            .box_data{
+                width:58.333%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1180px){
+    .course{
+        .course_box{
+            .box_shadow{
+                width:374px;
+                height:427px;
+                .box_img{
+                    width:374px;
+                    height:427px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .course{
+        .course_box{
+            .box_shadow{
+                width:720px;
+                height:822px;
+                .box_img{
+                    width:720px;
+                    height:822px; 
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 991px) and (min-width: 750px){
+.course{
+    .course_box{
+        .box_data{
+            margin-top: 25px;
+            margin-left: -65px;
+            text-align: left
+        }
+    }
+
+    } 
+    
+
+}
+
+
+@media only screen and (max-width:749px) and (min-width:350px){
+    .course{
+        .course_box{
+            
+            .box_shadow{
+                justify-self: center;
+                overflow: hidden;
+                width:80%;
+                height:500px;
+                .box_img{
+                    overflow: hidden;
+                    width:100%;
+                    
+                }
+            }
+            .box_data{
+                width:80%;
+                height: 100%;
+                margin-top: 20px;
+                margin-left: -40px;
+                .box_data1{
+                    flex-direction: column;
+                    border-top: 0px;
+                    .d1{
+                        border-right: 0px;
+                        border-bottom: 1px solid grey;
+                        margin-bottom: 10px;
+                        padding-bottom: 20px;
+                        h4{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+

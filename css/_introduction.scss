@@ -1,0 +1,134 @@
+
+/* CSS -> Display:flex | half screen is image and half is text */
+/* flex wrap is used */
+
+.introduction{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-left: 140px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-right: 150px;
+    
+    /* CSS for image part */
+
+    .intro_img{
+        background-image: url(../img/about.jpg);
+        margin-right: 20px;
+        min-width: 550px;
+        height:500px;
+        background-repeat: no-repeat;
+    }
+
+    /* CSS for text part */
+
+    .intro_data{
+        
+        min-width: 300px;
+        h5{
+            color:grey;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .head{
+            color: #002147;
+            font-size: 30px;
+            font-weight: 550;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .line{
+
+            margin-bottom: 25px;
+            background-color: orange;
+            width: 50px;
+            height: 1.5px;
+        }
+        
+        .data{
+            color:rgb(87, 87, 87);
+            line-height: 1.6;
+        }
+        .read_more{
+            margin-top: 20px;
+            width:120px;
+            height:50px;
+            border: #002147 1.5px solid;
+            padding-top: 18px;
+            padding-left: 18px;
+            background-color: transparent;
+            a{
+                color: #002147;
+            }
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+    }
+}
+
+/* media query for responsive nature */
+
+@media only screen and (max-width:1374px)
+{
+    .introduction{
+        padding-top: 60px;
+        padding-bottom: 25px;
+        margin-left: 70px;
+        margin-right: 75px;
+        .intro_img{
+            min-width: 380px;
+            background-size: contain;
+        }
+        .intro_data{
+            max-width: 490px;
+        }
+    }
+}
+
+@media only screen and (max-width:1374px)
+{
+    .introduction{
+        padding-top: 60px;
+        padding-bottom: 25px;
+        margin-left: 30px;
+        margin-right: 75px;
+        .intro_img{
+            min-width: 550px;
+            background-size: contain;
+        }
+        .intro_data{
+            max-width: 600px;
+        }
+    }
+
+}
+
+
+
+@media only screen and (max-width: 450px){
+    a:hover{
+    text-decoration: none;
+    cursor: pointer !important;
+    }
+    .introduction{
+        padding: 0px;
+        margin: 0px;
+        justify-content: start;
+        .intro_img{
+           margin-right: 10px;
+           margin-top: 20px;
+            min-width:400px;
+            width:auto;
+            height:400px;
+            background-size: contain;
+        }
+        .intro_data{
+            max-width: 380px;
+            margin-left: 10px;
+            margin-bottom: 30px;
+            
+        }
+    }
+}

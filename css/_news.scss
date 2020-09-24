@@ -1,0 +1,162 @@
+.news{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .heading{
+        
+        margin-bottom: 30px;
+        .head{
+            text-align: center;
+            h2{
+                display: inline-block;
+                font-weight: 700;
+                position: relative;
+                z-index: 1;
+                font-size: 28px;
+                color: #002147;
+                margin-bottom:15px;
+                padding-bottom: 20px;
+            }
+        }
+        .para{
+            text-align: center;
+            p{
+                   color: #666666;
+            
+                line-height: 26px;
+                margin: 0 0 15px;
+                text-transform: none;
+                font-weight: 400;
+                font-size:14px;
+            
+            }
+        }
+    }
+
+    .section{
+        display: flex;
+        justify-content: center;
+        .sec1{
+            width:420px;
+            height:auto;
+            padding-right:15px;
+            padding-left: 15px;
+            
+            .img_cont{
+                background-image: url(../img/n1.jpg);
+                background-size: cover;
+                width:auto;
+                height:290px;
+                transform: scale(1);
+                transition: all 2.0s;
+                .small_box{
+                        float: left;
+                        padding: 15px 20px;
+                        background-color: rgba(#002147,0.85) ;
+                        
+                        z-index: 1;
+                        margin-left: 20px;
+                        margin-top: 170px;
+                        .date{
+                            text-align: center;
+                            font-size: 40px;
+                            font-weight: 900;
+                            color: #ffb606;
+                        }
+                        .month{
+                            text-align: center;
+                            color: #ffb606;
+                            font-size: 14px;
+                        }
+                }
+                margin-bottom: 10px;
+
+            }
+
+            .img_cont:hover{
+                transform: scale(1.15);
+            }
+
+            .info_cont{
+                padding-top: 30px;
+                h4{
+                    
+                        
+                        margin-bottom: 15px;
+                    a{
+                        color: #002147;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                    a:hover{
+                        color:yellow;
+                    }
+                }
+                p{
+                    color: #666666;
+                    line-height: 26px;
+                    margin: 0 0 15px;
+                    text-transform: none;
+                    font-weight: 400;
+                }
+                .read{
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #666666;
+                    font-size: 14px;
+                }
+            }
+            .extra{
+                border-top: 1px solid #e7e7e7;
+                margin-top: 15px;
+                padding-top: 15px;
+                span{
+                    color: #666666;
+                    display: inline-block;
+                    margin-right: 10px;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
+            }
+        }
+        #n2{
+            .img_cont{
+                background-image: url(../img/n2.jpg);
+            }
+        }
+        #n3{
+            .img_cont{
+                background-image: url(../img/n3.jpg);
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:990px){
+    .news{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        .section{
+            flex-direction: column;
+            justify-content: center;
+
+            .sec1{
+                width:100%;
+                height: auto;
+                
+                .img_cont{
+                    width: auto;
+                    min-height:480px;
+                    .small_box{
+                        vertical-align: bottom;
+                    }
+                }
+
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

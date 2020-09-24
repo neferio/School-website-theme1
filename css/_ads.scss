@@ -1,0 +1,99 @@
+.ads{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    .main_box{
+        
+        padding-left: 15px;
+        padding-right: 15px;
+        display:flex;
+        
+        justify-content: center;
+        .box1{
+            width:390px;
+            height: auto;
+            float:left;
+            padding-right: 15px;
+            padding-left: 15px;
+            .head{
+                //float:left;
+                display: block;
+                h4{
+                    color:#002147;
+                    line-height: 1.2;
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                    font-weight: 400;
+                }
+            }
+            .para{
+                p{
+                    display: inline-block;
+                    line-height: 26px;
+                    color: #666666;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+
+        }
+        .box2{
+            display:flex;
+            .b1{
+                img{
+                    width:200px;
+                    height:auto;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:990px){
+    .ads{
+        .main_box{
+            flex-wrap: wrap;
+            .box1{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+                
+                .head{
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .ads{
+        .main_box{
+            .box2{
+                    #bb1{
+                        display: none;
+                    }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:500px){
+    .ads{
+        .main_box{
+            .box2{
+                    #bb1 , #bb2{
+                        display: none;
+                    }
+            }
+        }
+    }
+}

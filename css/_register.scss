@@ -1,0 +1,189 @@
+.registration{
+    padding-top:80px;
+    
+    padding-left:30px;
+    padding-right:30px;
+    background-color: #f9f9f9;
+
+    .sections{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .sec1{
+            padding:15px;
+            max-width:585px;
+            height:auto;
+            padding-bottom: 80px;
+            .heading{
+                h2{
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                    padding-bottom: 20px;
+                    position: relative;
+                    z-index: 1;
+                    color: #002147;
+                    text-align: left;
+                }
+                p{
+                    color: #666666;
+                    line-height: 26px;
+                    margin: 0 0 15px;
+                    text-transform: none;
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-align: left;
+                }
+                
+
+            }
+            .form1{
+                width:auto;
+                .fname{
+                    display: inline-block;
+                    min-width:260px;
+                    height:auto;
+                    margin-right:15px;
+                    #f{
+                        width:260px;
+                        //height:50px;
+                        border: 1px solid #e7e7e7;
+                        border-radius: inherit;
+                        box-shadow: inherit;
+                        color: #666666;
+                        min-height: 50px;
+                        padding: 6px 12px;
+                        font-size: 14px;
+                    }
+                   
+                    
+
+                }
+                .lname{
+                    display: inline-block;
+                    min-width:260px;
+                    height:auto;
+                    //margin-right:20px;
+                    #l{
+                        width:260px;
+                        border: 1px solid #e7e7e7;
+                        border-radius: inherit;
+                        box-shadow: inherit;
+                        color: #666666;
+                        min-height: 50px;
+                        padding: 6px 12px;
+                        font-size: 14px;
+                    }
+                    
+                }
+                .email{
+                    width:100%;
+                    margin-top: 14px;
+                    #e{
+                        width:100%;
+                        min-height: 50px;
+                        border: 1px solid #e7e7e7;
+                        border-radius: inherit;
+                        box-shadow: inherit;
+                        color: #666666;
+                       
+                        padding: 6px 12px;
+                        font-size: 14px;
+                        
+                    }
+                }
+                .group{
+                    margin-top: 14px;
+                    select{
+                        width:100%;
+                        min-height: 50px;
+                        border: 1px solid #e7e7e7;
+                        border-radius: inherit;
+                        box-shadow: inherit;
+                        color: #666666;
+                        
+                        
+                        height: 34px;
+                        padding: 6px 12px;
+                        font-size: 14px;
+                        line-height: 1.42857143
+                    }
+                }
+                .no{
+                    width:100%;
+                    margin-top: 14px;
+                    #n{
+                        width:100%;
+                        min-height: 50px;
+                        border: 1px solid #e7e7e7;
+                        border-radius: inherit;
+                        box-shadow: inherit;
+                        color: #666666;
+                       
+                        padding: 6px 12px;
+                        font-size: 14px;
+                    }
+                }
+                .regist{
+                    background: #ffb606 none repeat scroll 0 0;
+                    border: medium none;
+                    box-shadow: inherit;
+                    font-family: "Poppins",sans-serif;
+                    font-weight: 600;
+                    margin-top: 15px;
+                    height:50px;
+                    padding: 10px 40px;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .sec2{
+            width:585px;
+            height:auto;
+            background-image: url(../img/contact.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-height: 520px;
+
+        }
+    }
+}
+@media only screen and (min-width:990px){
+    .registration{
+        .sections{
+            .sec1{
+                width:50%;
+            }
+            .sec2{
+                width:50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:990px){
+    .registration{
+        .sections{
+            .sec1{
+                width:100%;
+                float:left;
+                .form1{
+                    .fname{
+                        width:100%;
+                        #f{
+                            width:100%;
+                        }
+                    }
+                    .lname{
+                        display: block;
+                        width:100%;
+                        margin-top: 14px;
+                        #l{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

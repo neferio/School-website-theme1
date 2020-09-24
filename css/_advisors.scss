@@ -1,0 +1,174 @@
+.advisors{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    overflow: hidden;
+    background-color: #ffffff none repeat scroll 0 0;
+    
+    
+    .part1{
+        margin-bottom:60px ;
+        padding-left: 15px;
+        width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        float:center;
+        
+        h2{
+            color: #002147;
+            margin-bottom: 15px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        
+        p{
+            color:#666666;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    }
+    .advisors_1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: -15px -15px 0;
+        padding: 15px;
+        .part2{
+            width: auto;
+            overflow: hidden;
+            margin-right: 30px;
+            box-shadow: 0 0 10px #cccccc;
+            .part2_1{
+                width:auto;
+                img{
+                    width:360px;
+                }
+            }
+            .part2_2{
+                padding:25px;
+                
+                .part2_21{
+                    border-bottom: 1px black solid;
+                    padding-bottom: 15px;
+                    margin-bottom: 10px;
+                    h4{
+                        color: #002147;
+                        margin-bottom: 5px;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                    span{
+                        color: #ffb606;
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-align: center;
+                        
+
+                    }
+
+
+                }
+                .mdi-facebook{
+                    font-size: 35px;
+                    background-color:#3b5998;
+                    margin-right: 10px;
+                    border-radius: 3px;
+                }
+                .mdi-twitter{
+                    background-color:#1da1f2;
+                    font-size: 35px;
+                    margin-right:10px;
+                    border-radius: 3px;
+                }
+                .mdi-pinterest{
+                    background-color: #bd081c;
+                    font-size: 35px;
+                    margin-right:10px;
+                    border-radius: 3px;
+                }
+                .mdi-linkedin{
+                    background-color:#0077b5;
+                    font-size: 35px;
+                    margin-right:10px;
+                    border-radius: 3px;
+                }
+               
+            }
+        }
+    }
+    
+}
+
+
+
+
+@media only screen and (min-width: 600px)
+{
+    .advisors{
+        
+            .part1{
+               // margin-left: 15.66666667%;
+               text-align: center;
+                width:59.66667%;
+            }
+            .part2{
+                .part2_1{
+                    width:59.66669%;
+                }
+            }
+    }
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 400px)
+{
+    .advisors{
+        
+            .part1{
+                padding-left: 0px;
+                
+                padding-right: 90px;
+                margin-left: 0px;
+                width:112%;
+                p{
+                    text-align: center;
+                    //width:320px;
+                    //margin-right: 20px;
+                }
+            }
+           
+    }
+}
+
+
+@media only screen and (max-width:990px)
+{
+    .advisors{
+        .advisors_1{
+            #a3{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px)
+{
+    .advisors{
+        .advisors_1{
+            #a1{
+                width:100%;
+                .part2_1{
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+            #a3,#a2{
+                display: none;
+            }
+        }
+    }
+}

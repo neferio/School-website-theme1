@@ -1,0 +1,43 @@
+
+
+/* imported css files */
+
+@import "font-family";
+@import "header";
+@import "slider";
+@import "introduction";
+@import "feature";
+@import "chose";
+@import "course";
+@import "popcos";
+@import "top-cat";
+@import "advisors";
+@import "count";
+@import "events";
+@import "register";
+@import "review";
+@import "news";
+@import "ads";
+@import "footer"; 
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+   
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+li {
+    list-style: none !important;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer !important;
+}
+

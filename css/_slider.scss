@@ -1,0 +1,111 @@
+
+/* CSS for slider -> headings | fixed background | 2 buttons */
+
+
+.slider{
+    background-image: url("../img/banner.jpg");
+    width:100%;
+    height:900px;
+    background-attachment: fixed;
+    overflow: hidden;
+    .slider_black{
+        background-color:rgba(0, 0, 0, 0.65);
+        width:100%;
+        height:100%;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    .slider__1{
+        h2{
+            color:white;
+            position: relative;
+            padding-top:250px;
+            padding-left: 50px;
+            font-size:30px;
+            font-weight: 400;
+           
+        }
+        h1{
+            padding-left: 45px;
+            color:white;
+            font-size: 54px;
+        }
+
+
+    }
+    .slider_button{
+        .but1{
+           
+            display:inline-block;
+            margin-left: 57px;
+            background:transparent;
+            font-size: 17px;
+            font-weight: 500;
+            padding-top: 17px;
+            padding-left: 17px;
+            padding-bottom: 15px;
+            padding-right: 15px;
+            width:150px;
+            border:1.5px solid white;
+            a{
+                color: white ;
+            }
+        }
+        .but2{
+            display: inline-block;
+            margin-left: 20px;
+            background-color: orange;
+            font-size: 16px;
+            font-weight: 600;
+            padding-top: 17px;
+            padding-left: 20px;
+            padding-bottom: 15px;
+            padding-right: 15px;
+            width:170px;
+            border:1.5px solid orange;
+
+            
+            a{
+                color: black ;
+            }
+        }
+    }
+
+    
+
+}
+
+
+/* making size of text and button responsive */
+
+@media only screen and (max-width:480px)
+{
+    .slider{
+        background-size: cover;
+        background-position:center;
+        .slider__1{
+            h2{
+                padding-left: 15px;
+                font-size:20px;
+            }
+            h1{
+                padding-left: 15px;
+                font-size:34px;
+            }
+
+        }
+        .slider_button{
+            .but1{
+                display: block;
+                margin-left: 15px;
+                margin-bottom: 15px;
+            }
+            .but2{
+                display: block;
+                margin-left: 15px;
+                
+
+            }
+        }
+    }
+}
